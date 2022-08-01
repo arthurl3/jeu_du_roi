@@ -44,5 +44,5 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/datas/cards.json
+/assets/datas/cards.json
 /out/

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CustomColors {
 
-  static Color primary = Color.fromRGBO(214, 219, 223, 1.0);
-  static Color appBackground = Color.fromRGBO(200, 140, 120, 1.0);
-  static Color customWarning = Color.fromRGBO(231, 76, 60, 1.0);
+  static Color primary = Color.fromRGBO(169, 204, 227, 1.0);
+  static Color appBackground = Color.fromRGBO(169, 204, 227, 1.0);
+
 
   //Game Background
   static Color bg1 = Color.fromRGBO(75,70,200, 1.0);
@@ -18,6 +18,7 @@ class CustomColors {
   static Color bg9 = Color.fromRGBO(82,22,100, 1.0);
   static Color bg10 = Color.fromRGBO(35,130,177, 1.0);
 
+  // Random game backgrounds
   static List<Color> gameBackgrounds = [
     bg1,
     bg2,
@@ -30,17 +31,21 @@ class CustomColors {
     bg9,
     bg10
   ];
-  
+
+  //Button
+  static Color buttonBackground = Color.fromRGBO(240, 178, 122, 1.0);
+  static Color buttonBorder = Color.fromRGBO(31, 97, 141, 1.0);
+
   // Fonts
   static Color basicFontColor = Colors.black;
 
   // Icons
   static Color iconborder = Color.fromRGBO(110, 90, 74, 1.0);
   static Color customIcon = Colors.black;
+  static Color removeIcon = Color.fromRGBO(236, 112, 99, 1.0);
+  static Color addIcon = Color.fromRGBO(35, 155, 86 , 1.0);
 
   // Border
   static Color basicBorder = Color.fromRGBO(110, 90, 74, 1.0);
 
-  // Bar
-  static Color customBottomBarBackground = Color.fromRGBO(252, 252, 252, 1.0);
 }

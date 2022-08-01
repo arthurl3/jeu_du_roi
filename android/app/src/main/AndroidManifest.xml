@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jdr.jeu_du_roi">
    <application
-        android:label="jeu_du_roi"
+        android:label="Napusoif"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

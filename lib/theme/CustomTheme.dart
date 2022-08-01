@@ -7,23 +7,46 @@ class CustomTheme {
 
   static ThemeData get lightTheme {
     return ThemeData(
-      primaryColor: CustomColors.primary,
-      scaffoldBackgroundColor: CustomColors.primary,
+      primaryColor: CustomColors.appBackground,
+      scaffoldBackgroundColor: CustomColors.appBackground,
       backgroundColor: CustomColors.appBackground,
-      fontFamily: GoogleFonts.squarePeg().fontFamily,
+      fontFamily: GoogleFonts.dancingScript().fontFamily,
+
       textTheme: TextTheme(
         button: TextStyle(
           fontSize: 24,
         ),
         headline1: TextStyle(
-          color: Colors.black,
-          fontSize: 60,
+          fontFamily: GoogleFonts.indieFlower().fontFamily,
+          color: Colors.white,
+          fontSize: 45,
           fontWeight: FontWeight.bold,
         ),
         headline2: TextStyle(
-          color: Colors.black,
-          fontSize: 30,
+          color: Colors.white,
+          fontSize: 45,
           fontWeight: FontWeight.bold,
+        ),
+        headline3: TextStyle(
+          fontFamily: GoogleFonts.indieFlower().fontFamily,
+          color: Colors.white,
+          fontSize: 35,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 4.5,
+        ),
+        headline4: TextStyle(
+          fontFamily: GoogleFonts.indieFlower().fontFamily,
+          color: Colors.white,
+          fontSize: 40,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 3,
+        ),
+        headline5: TextStyle(
+          fontFamily: GoogleFonts.indieFlower().fontFamily,
+          color: Colors.white,
+          fontSize: 38,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 3,
         ),
         caption: TextStyle(
           color: CustomColors.primary,
@@ -31,10 +54,12 @@ class CustomTheme {
           fontStyle: FontStyle.italic,
         ),
         bodyText1: TextStyle(
-          color: CustomColors.customWarning,
-          fontSize: 12,
-          fontStyle: FontStyle.italic,
+          fontFamily: GoogleFonts.indieFlower().fontFamily,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 24,
         ),
+
 
 
       ),

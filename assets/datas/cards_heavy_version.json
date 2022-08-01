@@ -1,0 +1,262 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Bois 2 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 2,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Bois 3 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 3,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Bois 4 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 4,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Bois 5 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 5,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tout le monde boit 2 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 6,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tout le monde boit 3 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 7,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tout le monde boit 4 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 8,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tout le monde boit 5 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 9,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Désigne un joueur qui boira 2 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 10,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Désigne un joueur qui boira 3 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 11,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Désigne un joueur qui boira 4 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 12,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Désigne un joueur qui boira 5 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 13,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tous les joueurs sauf toi boivent 2 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 14,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tous les joueurs sauf toi boivent 3 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 15,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tous les joueurs sauf toi boivent 4 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 16,
+      "title": "LA ROUTE D'LASOUAF",
+      "text": "Tous les joueurs sauf toi boivent 5 Glouglous",
+      "number": 1
+    },
+    {
+      "id": 17,
+      "title": "MORT AUX VOISINS",
+      "text": "Lance un dé. Ton voisin de gauche et ton voisin de droite boivent chacun un nombre de Glouglou égal au score du dé",
+      "number": 4
+    },
+    {
+      "id": 18,
+      "title": "LE 6 COUPS",
+      "text": "Tu es le shérif. N'importe quand dans la partie, tu as 6 balles à tirer sur les joueurs de ton choix. 1 balle = 1 Glouglou",
+      "number": 4
+    },
+    {
+      "id": 19,
+      "title": "DANS LA MALLE DE MA GRAND-MÈRE...",
+      "text": " A tour de rôle, reprenez la phrase 'Dans la malle de ma grand-mère, il y a ...' en rajoutant à chaque fois un mot ou un groupe de mot. Le premier à se tromper fait 3 Glouglous. Tu commences.",
+      "number": 4
+    },
+    {
+      "id": 20,
+      "title": "SHOT !",
+      "text": "Fais un Glouglou en shot avec le breuvage pur de ton choix",
+      "number": 1
+    },
+    {
+      "id": 21,
+      "title": "LES THÈMES",
+      "text": "Lance un thème. A tour de rôle en commençant par toi chacun va donner une proposition qui répond à ce thème. Le joueur qui ne trouve plus ou qui se trompe fait 3 Glouglous. Exemple : Les marques de voitures, les positions au lit...",
+      "number": 4
+    },
+    {
+      "id": 22,
+      "title": "MISE À MORT",
+      "text": "Jusqu'à 3 fois, tu peux décider de mettre ton pouce vers le bas n'importe quand. Tous les joueurs doivent alors faire pareil. Le moins rapide fait 2 Glouglous",
+      "number": 4
+    },
+    {
+      "id": 23,
+      "title": "OBJET PRENANT",
+      "text": "Jusqu'à la fin du jeu, tu dois essayer de passer un objet à un autre joueur. Si tu y arrives, ce joueur fait 3 Gouglou. Si à la fin du jeu tu n'as pas réussi, tu fais le Glouglou ultime",
+      "number": 4
+    },
+    {
+      "id": 24,
+      "title": "GLOUGLOU ULTIME",
+      "text": "Tous les joueurs sauf toi font un Glouglou ultime",
+      "number": 1
+    },
+    {
+      "id": 60,
+      "title": "GLOUGLOU ULTIME",
+      "text": "Fais un Glouglou ultime",
+      "number": 1
+    },
+    {
+      "id": 25,
+      "title": "GLOUGLOU ULTIME",
+      "text": "Désigne quelqu'un qui fera un Glouglou ultime",
+      "number": 1
+    },
+    {
+      "id": 26,
+      "title": "6 OU RIEN",
+      "text": "Chaque joueur lance un dé. Tous les joueurs qui font 6 font le Glouglou ultime",
+      "number": 1
+    },
+    {
+      "id": 27,
+      "title": "ROULETTE RUSSE",
+      "text": "A tour de rôle en commencant par toi, lancez un dé. Le premier à faire 6 fait le Glouglou ultime.",
+      "number": 1
+    },
+    {
+      "id": 28,
+      "title": "LE ROI DES MELANGES",
+      "text": "A chaque fois qu'un joueur tombe sur le ROI DES MELANGES, il rajoute un ingrédient dans le calice. Quand LE ROI DES MELANGES arrive la 5ème fois, celui qui tombe dessus bois la mixture du calice.",
+      "number": 5
+    },
+    {
+      "id": 29,
+      "title": "GAGE",
+      "text": "Attribue un gage au joueur de ton choix",
+      "number": 20
+    },
+    {
+      "id": 30,
+      "title": "LA PAUSE DU GUERRIER",
+      "text": "Ton prochain verre sera de l'eau. Tant que le contenu est de l'eau, tes Glouglous sont doublées. Une fois le verre terminé, tu repars à ta boisson préférée.",
+      "number": 5
+    },
+    {
+      "id": 31,
+      "title": "ARMURE",
+      "text": "Pour une fois où tu es la cible pour boire. Tu diminues de moitié la quantité.",
+      "number": 2
+    },
+    {
+      "id": 32,
+      "title": "QUITTE OU DOUBLE",
+      "text": "Parie 1 à 3 Glouglous et lance un dé. Si tu fais un score pair, tu bois ce qui tu a parié. Si tu fais un score impair, les autres joueurs boivent le double.",
+      "number": 3
+    },
+    {
+      "id": 33,
+      "title": "À LA VIE À LA MORT",
+      "text": "Jusqu'à ton prochain tour, à chaque fois que tu bois, tous les autres joueurs boivent autant que toi.",
+      "number": 1
+    },
+    {
+      "id": 34,
+      "title": "LE 1 QUI PREND",
+      "text": "Lance le dé. Si tu fais 1, tu fais le Glouglou ultime. Sinon, les autres joueurs boivent un nombre de Glouglous égal au score du dé.",
+      "number": 4
+    },
+    {
+      "id": 35,
+      "title": "LE PARI",
+      "text": "Chaque joueur va parier sur un score au dé, puis lance le dé. Tous les joueurs ayant obtenu le score du dé peuvent distribuer 3 Glouglous réparties comme ils le souhaitent.",
+      "number": 1
+    },
+    {
+      "id": 36,
+      "title": "LE VOTE INJUSTE",
+      "text": "Chacun va voter pour un joueur qui prendra un Glouglou ultime. En cas d'égalité, tu tranches.",
+      "number": 1
+    },
+    {
+      "id": 37,
+      "title": "MAITRE DU JEU",
+      "text": "Jusqu'à ton prochain tour et jusqu'à une fois maximum par tour de chaque joueur, tu peux réaffecter les gorgées, les gages et les jokers à ta convenance.",
+      "number": 1
+    },
+    {
+      "id": 38,
+      "title": "VERRE A MOITIE VIDE VERRE A MOITIE PLEIN",
+      "text": "Tu décides si jusqu'à ton prochain tour les Glouglous sont doublées ou réduites de moitié",
+      "number": 2
+    },
+    {
+      "id": 39,
+      "title": "JUSQU'A CE QUE LA BOISSON NOUS SEPARE",
+      "text": "Choisis un joueur, jusqu'à ton prochain tour, à chaque fois  que tu fais des Glouglous, ce joueur en fait le double.",
+      "number": 1
+    },
+    {
+      "id": 40,
+      "title": "ESCLAVE DU JEU",
+      "text": "Jusqu'à ton prochain tour et jusqu'à une fois par joueur, chacun peut te réattribuer un gage ou ses gorgées",
+      "number": 1
+    },
+    {
+      "id": 41,
+      "title": "MIROIR",
+      "text": "La prochaine fois que tu dois faire un Glouglou, tu peux le renvoyer à n'importe quelle personne de ton choix.",
+      "number": 2
+    },
+    {
+      "id": 42,
+      "title": "GAGE INVERSÉ",
+      "text": "Tous les joueurs se concertent pour te donner un gage",
+      "number": 20
+    }
+  ]
+}

@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Napusoif',
+      debugShowCheckedModeBanner: false,
       theme: CustomTheme.lightTheme,
-      home: GameScreen(),
+      home: PlayerSelectionScreen(),
     );
   }
 }
