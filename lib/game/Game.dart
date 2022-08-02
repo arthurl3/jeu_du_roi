@@ -9,9 +9,11 @@ import 'package:jeu_du_roi/game/GameCard.dart';
 class Game {
   final String cardsFilepath;
   late List<GameCard> cardList;
+  late int kingsGameCounter;
 
   Game(this.cardsFilepath) {
     this.cardList = [];
+    kingsGameCounter = 0;
   }
 
   // Fisher–Yates shuffle
@@ -54,6 +56,11 @@ class Game {
     if (this.cardList.length > 0) {
       GameCard gc = this.cardList.last;
       this.cardList.removeLast();
+      if(gc.cardId == 28) {
+        this.kingsGameCounter++;
+      }
+      if(this.kingsGameCounter == 5)
+        return GameCard(cardId: 666, title: 'LE ROI DES MELANGES', text: "Le dernier 'Roi des mélanges' est tombé. Bois le calice !");
       return gc;
     } else
       return GameCard(cardId: 777, title: 'FIN DE LA PARTIE', text: '');

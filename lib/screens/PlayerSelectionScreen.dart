@@ -106,7 +106,6 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
         ),
       );
     }
-
   }
 
 }

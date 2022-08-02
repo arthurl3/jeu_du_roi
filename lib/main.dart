@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Napusoif',
+      restorationScopeId: "root",
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.lightTheme,
       home: PlayerSelectionScreen(),

@@ -20,7 +20,7 @@ class GameScreen extends StatefulWidget {
 }
 
 /// This is the private State class that goes with MyStatefulWidget.
-class _GameScreen extends State<GameScreen> {
+class _GameScreen extends State<GameScreen> {//with RestorationMixin{
   late BuildContext context;
   late GameCard currentCard;
   late Game game;
@@ -29,8 +29,9 @@ class _GameScreen extends State<GameScreen> {
 
   @override
   void initState() {
+    currentCard = GameCard(cardId: 111, title: 'DEBUT', text: '');
     super.initState();
-    game = Game(Constants.STRING_BASEMODEFILEPATH);
+    game = Game(Constants.STRING_HEAVYMODEFILEPATH);
     game.loadCardList(rebuild);
     gameBackgroundColor = genRandomBackground();
   }
@@ -41,46 +42,49 @@ class _GameScreen extends State<GameScreen> {
 
     SizeConfig().init(context);
     //developer.log(SizeConfig.screenWidth.toString(), name: 'dev.test');
-    return Scaffold(
-      body: GestureDetector(
-        onTap: (){
-          nextCard();
-        },
-        child: Container(
-          color: gameBackgroundColor,
-          child: Padding(
-            padding: const EdgeInsets.only(top:70.0),
-            child:Column(
-                children:[
-                  Center(
-                    child: Text(
-                      currentCard.title,
-                      textAlign: TextAlign.center,
-                       style: Theme.of(context).textTheme.headline4,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top:40.0),
-                    child: Center(
-                       child: Text(
-                         widget.playerList[currentPlayer].name,
-                         textAlign: TextAlign.center,
-                         style: Theme.of(context).textTheme.headline5,
-                       )
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:5.0, right:10.0),
-                    child: Center(
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: Scaffold(
+        body: GestureDetector(
+          onTap: (){
+            nextCard();
+          },
+          child: Container(
+            color: gameBackgroundColor,
+            child: Padding(
+              padding: const EdgeInsets.only(top:70.0),
+              child:Column(
+                  children:[
+                    Center(
                       child: Text(
-                        currentCard.text,
+                        currentCard.title,
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      )
+                         style: Theme.of(context).textTheme.headline4,
+                      ),
                     ),
-                  ),
-                ],
-              ),
+                    Padding(
+                      padding: const EdgeInsets.only(top:40.0),
+                      child: Center(
+                         child: Text(
+                           widget.playerList[currentPlayer].name,
+                           textAlign: TextAlign.center,
+                           style: Theme.of(context).textTheme.headline5,
+                         )
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:5.0, right:10.0),
+                      child: Center(
+                        child: Text(
+                          currentCard.text,
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyText1,
+                        )
+                      ),
+                    ),
+                  ],
+                ),
+            ),
           ),
         ),
       ),
@@ -106,4 +110,12 @@ class _GameScreen extends State<GameScreen> {
       currentCard = game.getNextCard();
     });
   }
+
+  // @override
+  // String? get restorationId => "GameScreen";
+  //
+  // @override
+  // void restoreState(RestorationBucket? oldBucket, bool initialRestore) {
+  //   registerForRestoration(property, "game");
+  // }
 }
