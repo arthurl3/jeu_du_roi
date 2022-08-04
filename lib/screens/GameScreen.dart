@@ -5,8 +5,9 @@ import 'package:jeu_du_roi/config/SizeConfig.dart';
 import 'package:jeu_du_roi/game/Game.dart';
 import 'package:jeu_du_roi/game/GameCard.dart';
 import 'package:jeu_du_roi/game/Player.dart';
-import 'package:jeu_du_roi/theme/CustomColors.dart';
+import 'package:jeu_du_roi/theme/AppColors.dart';
 import 'package:jeu_du_roi/utils/utils.dart';
+
 
 /// This is the stateful widget that the main application instantiates.
 class GameScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
   void initState() {
     currentCard = GameCard(cardId: 111, title: 'DEBUT', text: '');
     super.initState();
-    game = Game(Constants.STRING_HEAVYMODEFILEPATH);
+    game = Game(Constants.STRING_JBVERSION, widget.playerList);
     game.loadCardList(rebuild);
     gameBackgroundColor = genRandomBackground();
   }
@@ -45,6 +46,22 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
+        resizeToAvoidBottomInset : false,
+        appBar: AppBar(
+          key: UniqueKey(),
+          backgroundColor: gameBackgroundColor,
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
+          actions: [
+            IconButton(
+            icon: Icon(Icons.person_remove_alt_1_outlined),
+            onPressed: () {},
+      ),
+      ]
+        ),
         body: GestureDetector(
           onTap: (){
             nextCard();
@@ -56,14 +73,17 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
               child:Column(
                   children:[
                     Center(
-                      child: Text(
-                        currentCard.title,
-                        textAlign: TextAlign.center,
-                         style: Theme.of(context).textTheme.headline4,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left:15.0, right: 15.0),
+                        child: Text(
+                          currentCard.title,
+                          textAlign: TextAlign.center,
+                           style: Theme.of(context).textTheme.headline4,
+                        ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top:40.0),
+                      padding: const EdgeInsets.only(top:50.0, bottom: 20.0),
                       child: Center(
                          child: Text(
                            widget.playerList[currentPlayer].name,
@@ -73,7 +93,7 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left:5.0, right:10.0),
+                      padding: const EdgeInsets.only(left:25.0, right:25.0),
                       child: Center(
                         child: Text(
                           currentCard.text,
@@ -110,6 +130,15 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
       currentCard = game.getNextCard();
     });
   }
+
+  void removePlayer() {
+    setState(() {
+      // late Player player;
+      // widget.playerList.remove(player);
+    });
+  }
+
+
 
   // @override
   // String? get restorationId => "GameScreen";

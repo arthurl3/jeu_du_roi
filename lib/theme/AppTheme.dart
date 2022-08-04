@@ -1,85 +1,78 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'CustomColors.dart';
+import 'AppColors.dart';
 
-class CustomTheme {
-
+class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
-      primaryColor: CustomColors.appBackground,
-      scaffoldBackgroundColor: CustomColors.appBackground,
-      backgroundColor: CustomColors.appBackground,
+      primaryColor: AppColors.appBackground,
+      scaffoldBackgroundColor: AppColors.appBackground,
+      backgroundColor: AppColors.appBackground,
       fontFamily: GoogleFonts.dancingScript().fontFamily,
-
       textTheme: TextTheme(
         button: TextStyle(
           fontSize: 24,
         ),
         headline1: TextStyle(
           fontFamily: GoogleFonts.indieFlower().fontFamily,
-          color: Colors.white,
+          color: AppColors.basicFontColor,
           fontSize: 45,
           fontWeight: FontWeight.bold,
         ),
         headline2: TextStyle(
-          color: Colors.white,
+          color: AppColors.basicFontColor,
           fontSize: 45,
           fontWeight: FontWeight.bold,
         ),
         headline3: TextStyle(
-          fontFamily: GoogleFonts.indieFlower().fontFamily,
-          color: Colors.white,
-          fontSize: 35,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 4.5,
+          fontFamily: GoogleFonts.mochiyPopOne().fontFamily,
+          color: AppColors.basicFontColor,
+          fontSize: 40,
         ),
         headline4: TextStyle(
           fontFamily: GoogleFonts.indieFlower().fontFamily,
-          color: Colors.white,
+          color: AppColors.basicFontColor,
           fontSize: 40,
           fontWeight: FontWeight.bold,
+          height: 1.2,
           letterSpacing: 3,
         ),
         headline5: TextStyle(
-          fontFamily: GoogleFonts.indieFlower().fontFamily,
-          color: Colors.white,
-          fontSize: 38,
+          fontFamily: GoogleFonts.alef().fontFamily,
+          color: AppColors.basicFontColor,
+          fontSize: 32,
           fontWeight: FontWeight.bold,
           letterSpacing: 3,
         ),
         caption: TextStyle(
-          color: CustomColors.primary,
-          fontSize: 16,
-          fontStyle: FontStyle.italic,
+          fontFamily: GoogleFonts.mulish().fontFamily,
+          fontSize: 8,
         ),
         bodyText1: TextStyle(
-          fontFamily: GoogleFonts.indieFlower().fontFamily,
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
+          fontFamily: GoogleFonts.notoSerif().fontFamily,
+          color: AppColors.basicFontColor,
           fontSize: 24,
+          height: 1.5,
         ),
-
-
-
       ),
       buttonTheme: ButtonThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
-          side: BorderSide(color: CustomColors.primary),
+          side: BorderSide(color: AppColors.primary),
         ),
-        buttonColor: CustomColors.primary,
+        buttonColor: AppColors.primary,
       ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(
-            CustomColors.primary,
+            AppColors.primary,
           ),
           foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
-              side: BorderSide(color: CustomColors.primary),
+              side: BorderSide(color: AppColors.primary),
             ),
           ),
         ),
@@ -90,29 +83,23 @@ class CustomTheme {
         //border: InputBorder.none,
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: CustomColors.primary,
+            color: AppColors.buttonBorder,
           ),
           borderRadius: BorderRadius.circular(5.0),
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.black,
+            color: AppColors.buttonBorder,
           ),
           borderRadius: BorderRadius.circular(5.0),
         ),
         hintStyle: TextStyle(
-          color: Colors.grey[600],
+          color: AppColors.basicFontColor,
           fontSize: 16,
           fontStyle: FontStyle.italic,
         ),
-        focusColor: CustomColors.primary,
-
+        focusColor: AppColors.bodyFontColor,
       ),
     );
   }
-
-
-
-
-
 }

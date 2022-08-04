@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jeu_du_roi/config/SizeConfig.dart';
-import 'dart:developer' as developer;
-
-import 'package:jeu_du_roi/theme/CustomColors.dart';
+import 'package:jeu_du_roi/constants/constants.dart' as Constants;
+import 'package:jeu_du_roi/theme/AppColors.dart';
 
 class PlayerRow extends StatefulWidget {
-
   List<TextEditingController> controller;
 
   PlayerRow({Key? key, required this.controller}) : super(key: key);
 
   @override
   _PlayerRow createState() => _PlayerRow();
-
 }
 
 class _PlayerRow extends State<PlayerRow> {
@@ -29,7 +27,7 @@ class _PlayerRow extends State<PlayerRow> {
 
   @override
   void dispose() {
-    for(TextEditingController textEditingController in widget.controller) {
+    for (TextEditingController textEditingController in widget.controller) {
       textEditingController.dispose();
       super.dispose();
     }
@@ -43,25 +41,23 @@ class _PlayerRow extends State<PlayerRow> {
     return Column(
       children: [
         ListView.builder(
-            shrinkWrap: true,
-            itemCount: _playerRowList.length,
-            itemBuilder: (BuildContext ctxt, int index) {
-              return _playerRowList[index];
-            },
+          shrinkWrap: true,
+          itemCount: _playerRowList.length,
+          itemBuilder: (BuildContext ctxt, int index) {
+            return _playerRowList[index];
+          },
         ),
-        if(_playerRowList.length < 10)IconButton(
+        if (_playerRowList.length < Constants.MAX_PLAYER)
+          IconButton(
               icon: Icon(Icons.add_circle_rounded),
               iconSize: 35,
               color: Colors.green,
-              onPressed: () => addPlayer()
-          ),
+              onPressed: () => addPlayer()),
       ],
     );
   }
 
-  Widget? _addIconButton() {
-
-  }
+  Widget? _addIconButton() {}
 
   void addPlayer() {
     setState(() {
@@ -71,7 +67,8 @@ class _PlayerRow extends State<PlayerRow> {
     });
   }
 
-  void removePlayer(Widget player, TextEditingController textEditingController) {
+  void removePlayer(
+      Widget player, TextEditingController textEditingController) {
     setState(() {
       textEditingController.dispose();
       widget.controller.remove(textEditingController);
@@ -90,11 +87,14 @@ class _PlayerRow extends State<PlayerRow> {
           width: SizeConfig.screenWidth! / 2,
           height: 35.0,
           child: TextField(
+            keyboardType: TextInputType.text,
+            textCapitalization: TextCapitalization.words,
+            style: TextStyle(
+              fontFamily: GoogleFonts.mulish().fontFamily,
+            ),
             controller: textEditingController,
+            //keyboardType: TextCapitalization.sentences,
             decoration: InputDecoration(
-              border: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(width: 4.0, color: Colors.lightBlue.shade50)),
               labelText: 'Joueur $rowId',
             ),
           ),
@@ -102,14 +102,11 @@ class _PlayerRow extends State<PlayerRow> {
         IconButton(
           icon: Icon(Icons.cancel),
           iconSize: 30,
-          color: CustomColors.removeIcon,
+          color: AppColors.removeIcon,
           onPressed: () => removePlayer(pRow, textEditingController),
         ),
       ],
     );
     return pRow;
   }
-
-
-
 }

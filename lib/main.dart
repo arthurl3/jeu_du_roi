@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:jeu_du_roi/screens/PlayerSelectionScreen.dart';
 import 'package:jeu_du_roi/screens/GameScreen.dart';
-import 'package:jeu_du_roi/theme/CustomTheme.dart';
+import 'package:jeu_du_roi/theme/AppColors.dart';
+import 'package:jeu_du_roi/theme/AppTheme.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,11 +13,20 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.transparent,
+      statusBarColor: Colors.black,
+    ));
+    // make it a full screen app
+    // but show Android navbar
+    // SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
+
     return MaterialApp(
       title: 'Napusoif',
       restorationScopeId: "root",
       debugShowCheckedModeBanner: false,
-      theme: CustomTheme.lightTheme,
+      theme: AppTheme.lightTheme,
       home: PlayerSelectionScreen(),
     );
   }

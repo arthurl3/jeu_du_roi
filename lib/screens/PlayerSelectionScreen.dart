@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 import 'package:jeu_du_roi/components/CustomTitle.dart';
 import 'package:jeu_du_roi/components/PlayerRow.dart';
@@ -7,7 +5,7 @@ import 'package:jeu_du_roi/constants/constants.dart' as Constants;
 import 'package:jeu_du_roi/config/SizeConfig.dart';
 import 'package:jeu_du_roi/game/Player.dart';
 import 'package:jeu_du_roi/screens/GameScreen.dart';
-import 'package:jeu_du_roi/theme/CustomColors.dart';
+import 'package:jeu_du_roi/theme/AppColors.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class PlayerSelectionScreen extends StatefulWidget {
@@ -35,17 +33,19 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
   Widget build(BuildContext context) {
     this.context = context;
 
-    //Return on playerselectionscreen : Navigator.pop(context);
-
     SizeConfig().init(context);
-    //developer.log(SizeConfig.screenWidth.toString(), name: 'dev.test');
     return Scaffold(
       resizeToAvoidBottomInset : false,
+      appBar: AppBar(
+        toolbarHeight: 75.0,
+        title: CustomTitle(context, Constants.PAGETITLE_PLAYERSELECTION),
+        backgroundColor: Colors.black,
+      ),
       body: SingleChildScrollView(
         child: ConstrainedBox(
           constraints: BoxConstraints(),
           child: Padding(
-            padding: const EdgeInsets.only(top: 40.0),
+            padding: const EdgeInsets.only(top: 20.0),
             child: Container(
               margin: const EdgeInsets.only(top: 0.0, bottom: 0.0),
               width: double.infinity,
@@ -53,7 +53,6 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  CustomTitle(context, Constants.PAGETITLE_PLAYERSELECTION),
                   playerRow,
                 ],
               ),
@@ -61,28 +60,24 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
           ),
         ),
       ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.all(4.0),
-        child: Container(
-          //margin: const EdgeInsets.only(top: 100.0),
-          height: 65.0,
-          width: SizeConfig.screenWidth! / 2,
-          child: FloatingActionButton.extended(
-              backgroundColor: CustomColors.buttonBackground,
-              label: Text(
-                Constants.STRING_PLAYERBUTTON,
-                style: Theme.of(context).textTheme.headline3,
-              ),
-              shape: RoundedRectangleBorder(
-                side: BorderSide(width: 1.5, color: CustomColors.buttonBorder),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              onPressed: () {
-                nextPage();
-              }),
-        ),
+      floatingActionButton: Container(
+        margin: const EdgeInsets.only(top: 0.0, bottom: 0.0),
+        height: 100.0,
+        width: SizeConfig.screenWidth!,
+        child: FloatingActionButton.extended(
+            backgroundColor: AppColors.buttonLauchGame,
+            label: Text(
+              Constants.STRING_PLAYERBUTTON,
+              style: Theme.of(context).textTheme.headline3,
+            ),
+            shape: RoundedRectangleBorder(
+              side: BorderSide(width: 1, color: AppColors.buttonBorder),
+            ),
+            onPressed: () {
+              nextPage();
+            }),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 
@@ -96,9 +91,8 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
 
   void nextPage() {
     List<Player> pl = getPlayerList();
-
     //Si la liste des joueurs n'est pas vide (au moins un joueur valide)
-    if(pl.length > 0) {
+    if(pl.length > 1) {
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -107,5 +101,4 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
       );
     }
   }
-
 }
