@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "LE ROI DES MELANGES",
-      "text": "A chaque fois qu'un joueur tombe sur le ROI DES MELANGES, il rajoute un ingrédient dans le calice. Quand LE ROI DES MELANGES arrive la 4ème fois, celui qui tombe dessus boit la mixture du calice.",
+      "text": "A chaque fois qu'un joueur tombe sur le 'Roi des mélanges', il rajoute un ingrédient dans le calice. Quand le 'Roi des mélanges' arrive la 5ème fois, celui qui tombe dessus boit la mixture du calice.",
       "number": 5
     },
     {
@@ -130,7 +130,7 @@
       "id": 22,
       "title": "GAGE",
       "text": "Attribue un gage au joueur de ton choix",
-      "number": 3
+      "number": 7
     },
     {
       "id": 23,
@@ -202,7 +202,7 @@
       "id": 34,
       "title": "MIROIR",
       "text": "La prochaine fois que tu dois faire un Glouglou, tu peux le renvoyer à n'importe quelle personne de ton choix.",
-      "number": 1
+      "number": 2
     },
     {
       "id": 35,
@@ -213,13 +213,13 @@
     {
       "id": 36,
       "title": "ÉCHANGE",
-      "text": "Verse une partie du contenu du verre du joueur à ta droite dans ton verre.",
+      "text": "Verse une partie du contenu du verre de %replace% dans ton verre.",
       "number": 1
     },
     {
       "id": 37,
       "title": "AMBIANCE",
-      "text": "Mets une musique. Tous les joueurs qui trouvent le titre te distribue 1 Glouglou.",
+      "text": "Mets une musique. Tous les joueurs qui trouvent le titre te distribuent 1 Glouglou.",
       "number": 1
     },
     {
@@ -231,25 +231,25 @@
     {
       "id": 39,
       "title": "LE MAILLON FAIBLE",
-      "text": "Rempli le verre de la personne qui a le moins de liquide. Si c'est toi, tu bois le Glouglou ultime",
+      "text": "Rempli le verre de la personne qui a le moins de liquide. Si c'est toi, tu bois le Glouglou ultime.",
       "number": 1
     },
     {
       "id": 40,
       "title": "CINÉMACINÉMA",
-      "text": "Donne une citation d'un film. Si le joueur à ta gauche n'arrive pas à le deviner, il boit 2 Glouglous",
+      "text": "Donne une citation d'un film. %replace% doit deviner de quel film il s'agit. S'il ne trouve pas, il ou elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 41,
       "title": "MOT DE SILENCE",
-      "text": "Donne un mot de ton choix. Pendant 2 tours, à chaque fois qu'une personne prononce ce mot, elle boit 4 Glouglous",
+      "text": "Donne un mot de ton choix. Pendant 2 tours, à chaque fois qu'une personne prononce ce mot, elle boit 3 Glouglous.",
       "number": 1
     },
     {
       "id": 42,
       "title": "TATOO",
-      "text": "Fais 1 Glouglou si tu as au moins un tatouage.",
+      "text": "Fais autant de Glouglou que tu as de tatouage.",
       "number": 1
     },
     {
@@ -261,7 +261,7 @@
     {
       "id": 44,
       "title": "LE REGLEMENT",
-      "text": "Tu peux créer une règle que tous le monde doit respecter, sinon ils font 2 Glouglous.",
+      "text": "Tu peux créer une règle que tout le monde doit respecter pendant 2 tours. Celui qui ne la respecte pas boit 2 Glouglous.",
       "number": 1
     },
     {
@@ -273,77 +273,77 @@
     {
       "id": 46,
       "title": "HISTORIQUE",
-      "text": "Révèle ton historique internet.",
+      "text": "Révèle ton historique internet ou boit 5 Glouglous.",
       "number": 1
     },
     {
       "id": 47,
       "title": "DATE",
-      "text": "Donne la date de naissance du joueur à ta droite ou boit 2 Glouglous.",
+      "text": "Donne la date de naissance de %replace% ou boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 48,
       "title": "MATHEUX",
-      "text": "Pose une question de science au joueur à ta droite. S'il ne trouve pas, il boit 2 Glouglous.",
+      "text": "Pose une question de science à %replace%. S'il ne trouve pas, il boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 49,
       "title": "EQUILIBRE",
-      "text": "Tous les joueurs se mettent sur une jambe. Celui qui tombe en premier.",
+      "text": "Tous les joueurs se mettent sur une jambe. Celui ou celle qui tombe en premier boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 50,
       "title": "JOKE",
-      "text": "Fais une blague. Bois si personne ne rigole.",
+      "text": "Fais une blague. Bois 2 Glouglous si personne ne rigole.",
       "number": 1
     },
     {
       "id": 51,
-      "title": "SWAP",
+      "title": "SWAPPING",
       "text": "Change de place avec le joueur le plus loin de toi.",
       "number": 1
     },
     {
       "id": 52,
-      "title": "DATE",
-      "text": "Donne la date de naissance du joueur à ta droite ou boit 2 Glouglous.",
-      "number": 1
-    },
-    {
-      "id": 53,
       "title": "QUESTION",
-      "text": "Pose une question de culture générale au joueur à ta droite. S'il ne trouve pas, il boit 2 Glouglous.",
+      "text": "Pose une question de culture générale à %replace%. S'il/elle ne trouve pas, il/elle boit 2 Glouglous.",
       "number": 1
     },
      {
-      "id": 54,
-      "title": "GAGE",
-      "text": "Tu dois sucer le gros orteil de ton voisin ou ta voisine de droite. Si tu refuses, tu prends 5 Glouglous. S'il/elle refuse il/elle prend tes Glouglous",
+      "id": 53,
+      "title": "QUE DU SALE",
+      "text": "Tu dois sucer le gros orteil de %replace%. Si tu refuses, tu prends 5 Glouglous. S'il/elle refuse il/elle prend tes Glouglous",
       "number": 1
       },
      {
-      "id": 55,
+      "id": 54,
       "title": "SANCTION",
       "text": "Prends 1 Glouglou par personne qui joue au Napusoif en leur disant droit dans les yeux que tu es une vilaine truie",
       "number": 1
     },
     {
-      "id": 56,
+      "id": 55,
       "title": "DEFI",
-      "text": "Es-tu prêt à encaisser une baffe par joueur présent? Pour chaque baffe, tu distribues 3 Glouglous à ce joueur. Au premier refus, glouglou ultime pour celui/celle qui refuse",
+      "text": "Es-tu prêt à encaisser une baffe par chaque joueur présent? Pour chaque baffe, tu distribues 3 Glouglous à ce joueur. Au premier refus, glouglou ultime pour celui/celle qui refuse de te mettre ",
       "number": 1
     },
     {
-      "id": 57,
+      "id": 56,
       "title": "JE N'AI JAMAIS",
       "text": "Donne une action que tu as faite en commençant par 'je n'ai jamais ...'. Ceux qui n'ont pas fait ou si tu te trompes : 3 Glouglous",
       "number": 1
     },
     {
-      "id": 58,
+      "id": 57,
+      "title": "GRUIK GRUIK !!!",
+      "text": "Tourne autour de la table en imitant un cochon appeuré pendant 20 secondes ou boit 5 Glouglous.",
+      "number": 1
+    },
+    {
+      "id": 666,
       "title": "SANCTION",
       "text": "Jordan doit se faire enculer par le joueur choisi par le dé : le premier joueur à ta droite  est représenté par le 1, le suivant par le 2, etc...  Sinon : cul-sec",
       "number": 1

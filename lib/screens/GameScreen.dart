@@ -1,3 +1,6 @@
+import 'dart:ffi';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:jeu_du_roi/components/CustomTitle.dart';
 import 'package:jeu_du_roi/constants/constants.dart' as Constants;
@@ -128,7 +131,22 @@ class _GameScreen extends State<GameScreen> {//with RestorationMixin{
         currentPlayer++;
       gameBackgroundColor = genRandomBackground();
       currentCard = game.getNextCard();
+      if(currentCard.hasReplacment())
+        currentCard.replaceText(_genRandomPlayer());
+
     });
+  }
+
+  //Génère un nom de joueur qui n'est pas celui du joueur actuel (pour certaines cartes)
+  String _genRandomPlayer() {
+    int randInt = 0;
+    bool isCurrentPlayer = true;
+    while (isCurrentPlayer) {
+      randInt = Random().nextInt(widget.playerList.length);
+      if (widget.playerList[randInt].name != widget.playerList[currentPlayer].name)
+        isCurrentPlayer = false;
+    }
+    return widget.playerList[randInt].name;
   }
 
   void removePlayer() {

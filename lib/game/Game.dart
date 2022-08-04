@@ -31,13 +31,12 @@ class Game {
 
   // Remove Extra cards in function of number of player
   void _removeExtraCards() {
-    while(this.cardList.length != this.nbCards) {
+    while (this.cardList.length != this.nbCards) {
       int randInt = 0;
       bool isKinggameCard = true;
-      while(isKinggameCard) {
-        randInt = Random().nextInt(this.cardList.length-1);
-        if(this.cardList[randInt].cardId != 1)
-          isKinggameCard = false;
+      while (isKinggameCard) {
+        randInt = Random().nextInt(this.cardList.length);
+        if (this.cardList[randInt].cardId != 1) isKinggameCard = false;
       }
       this.cardList.removeAt(randInt);
     }
@@ -54,7 +53,7 @@ class Game {
     List<dynamic> cards = jsonData['cards'];
     for (dynamic data in cards) {
       int quantity = data['number'];
-      if(data['id'] == 1) {
+      if (data['id'] == 1) {
         this.numberOfKingGameCard = quantity;
       }
       for (int i = 0; i < quantity; i++) {
@@ -63,10 +62,10 @@ class Game {
       }
     }
     shuffle();
-    printDeck(); // For Debugging
+    //printDeck(); // For Debugging
     _getNumberOfCards(); //Set the number of cards in function of player's number
     _removeExtraCards();
-    printDeck();
+    //printDeck();
     rebuildParent();
   }
 
@@ -74,12 +73,15 @@ class Game {
     if (this.cardList.length > 0) {
       GameCard gc = this.cardList.last;
       this.cardList.removeLast();
-      if(gc.cardId == 1) {
+      if (gc.cardId == 1) {
         this.kingsGameCounter++;
       }
-      if(this.kingsGameCounter == this.numberOfKingGameCard) {
+      if (this.kingsGameCounter == this.numberOfKingGameCard) {
         this.kingsGameCounter = 0;
-        return GameCard(cardId: 666, title: 'LE ROI DES MELANGES', text: "Le dernier 'Roi des mélanges' est tombé. Bois le calice !");
+        return GameCard(
+            cardId: 666,
+            title: 'LE ROI DES MELANGES',
+            text: "Le dernier 'Roi des mélanges' est tombé. Bois le calice !");
       }
       return gc;
     } else
@@ -137,7 +139,4 @@ class Game {
       developer.log(gc.toString(), name: 'dev.print');
     }
   }
-
-
-
 }
