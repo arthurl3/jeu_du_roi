@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'AppColors.dart';
+import 'package:jeu_du_roi/src/theme/AppColors.dart';
 
 class AppTheme {
   static ThemeData get lightTheme {
@@ -92,11 +91,6 @@ class AppTheme {
             color: AppColors.buttonBorder,
           ),
           borderRadius: BorderRadius.circular(5.0),
-        ),
-        hintStyle: TextStyle(
-          color: AppColors.basicFontColor,
-          fontSize: 16,
-          fontStyle: FontStyle.italic,
         ),
         focusColor: AppColors.bodyFontColor,
       ),

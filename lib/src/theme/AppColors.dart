@@ -42,6 +42,8 @@ class AppColors {
   static Color titleFontColor = Colors.white;
   static Color bodyFontColor = Colors.white;
   static Color basicFontColor = Colors.white;
+  static Color labelFontColor = Colors.grey;
+  static Color floatinglabelFontColor = Color.fromRGBO(236, 112, 99, 1.0);
 
   // Icons
   static Color iconborder = Color.fromRGBO(110, 90, 74, 1.0);

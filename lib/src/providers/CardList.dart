@@ -1,21 +1,44 @@
 import 'dart:convert';
 import 'dart:developer' as developer;
 import 'dart:math';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jeu_du_roi/game/GameCard.dart';
-import 'package:jeu_du_roi/game/Player.dart';
+import 'package:jeu_du_roi/src/models/GameCard.dart';
+import 'package:jeu_du_roi/src/constants/constants.dart' as Constants;
+import 'package:jeu_du_roi/src/constants/constant_cards.dart' as ConstantCards;
 
-class Game {
-  final String cardsFilepath;
-  late List<GameCard> cardList;
-  late List<Player> playerList;
-  late int kingsGameCounter;
+class CardList extends ChangeNotifier {
+  List<GameCard> cardList = [];
+  String cardsFilepath = Constants.STRING_BASEMODEFILEPATH;
+  int kingsGameCounter = 0;
   late int numberOfKingGameCard;
   late int nbCards;
 
-  Game(this.cardsFilepath, this.playerList) {
-    this.cardList = [];
-    kingsGameCounter = 0;
+  void addCard(GameCard p) {
+    this.cardList.add(p);
+    notifyListeners();
+  }
+
+  void removeLast() {
+    this.cardList.removeLast();
+    notifyListeners();
+  }
+
+  //Get the next card of the current game
+  GameCard getNextCard() {
+    if (this.cardList.length > 0) {
+      GameCard gc = this.cardList.last;
+      this.cardList.removeLast();
+      if (gc.cardId == 1) {
+        this.kingsGameCounter++;
+      }
+      if (this.kingsGameCounter == this.numberOfKingGameCard) {
+        this.kingsGameCounter = 0;
+        return ConstantCards.CARD_ROI_DES_MELANGES;
+      }
+      return gc;
+    }
+    return ConstantCards.END_GAME;
   }
 
   // Fisher–Yates shuffle
@@ -42,13 +65,9 @@ class Game {
     }
   }
 
-  Future<String> _loadCards() async {
-    return await rootBundle.loadString(this.cardsFilepath);
-  }
-
-  Future<void> loadCardList(Function rebuildParent) async {
+  Future<dynamic> loadCardList(int nPlayer) async {
     Map<dynamic, dynamic> jsonData;
-    String jsonContent = await _loadCards();
+    String jsonContent = await rootBundle.loadString(this.cardsFilepath);
     jsonData = json.decode(jsonContent);
     List<dynamic> cards = jsonData['cards'];
     for (dynamic data in cards) {
@@ -63,39 +82,15 @@ class Game {
     }
     shuffle();
     //printDeck(); // For Debugging
-    _getNumberOfCards(); //Set the number of cards in function of player's number
+    _setNumberOfCards(nPlayer); //Set the number of cards in function of player's number
     _removeExtraCards();
-    //printDeck();
-    rebuildParent();
+    notifyListeners();
   }
 
-  GameCard getNextCard() {
-    if (this.cardList.length > 0) {
-      GameCard gc = this.cardList.last;
-      this.cardList.removeLast();
-      if (gc.cardId == 1) {
-        this.kingsGameCounter++;
-      }
-      if (this.kingsGameCounter == this.numberOfKingGameCard) {
-        this.kingsGameCounter = 0;
-        return GameCard(
-            cardId: 666,
-            title: 'LE ROI DES MELANGES',
-            text: "Le dernier 'Roi des mélanges' est tombé. Bois le calice !");
-      }
-      return gc;
-    } else
-      return GameCard(cardId: 777, title: 'FIN DE LA PARTIE', text: '');
-  }
 
-  GameCard getFirstCard() {
-    GameCard gc = this.cardList.last;
-    this.cardList.removeLast();
-    return gc;
-  }
-
-  void _getNumberOfCards() {
-    switch (this.playerList.length) {
+  //Set number of cards in function of the number of player
+  void _setNumberOfCards(int nbPlayer) {
+    switch (nbPlayer) {
       case 2:
         this.nbCards = 30;
         break;
@@ -132,6 +127,12 @@ class Game {
     }
   }
 
+  GameCard getFirstCard() {
+    GameCard gc = this.cardList.last;
+    this.cardList.removeLast();
+    return gc;
+  }
+
   // For Debugging purpose
   void printDeck() {
     developer.log(this.cardList.length.toString(), name: 'dev.print');
@@ -139,4 +140,6 @@ class Game {
       developer.log(gc.toString(), name: 'dev.print');
     }
   }
+
 }
+
