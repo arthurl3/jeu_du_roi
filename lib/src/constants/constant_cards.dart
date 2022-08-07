@@ -7,7 +7,7 @@ GameCard CARD_ROI_DES_MELANGES = GameCard(
 );
 
 GameCard END_GAME = GameCard(
-    cardId: 0,
+    cardId: 9999,
     title: 'FIN DE LA PARTIE',
     text: ""
 );

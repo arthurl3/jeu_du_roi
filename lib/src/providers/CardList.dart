@@ -133,6 +133,12 @@ class CardList extends ChangeNotifier {
     return gc;
   }
 
+void empty() {
+    this.cardList = [];
+    String cardsFilepath = Constants.STRING_BASEMODEFILEPATH;
+    int kingsGameCounter = 0;
+}
+
   // For Debugging purpose
   void printDeck() {
     developer.log(this.cardList.length.toString(), name: 'dev.print');

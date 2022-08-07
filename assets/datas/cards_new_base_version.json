@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "LE ROI DES MELANGES",
-      "text": "A chaque fois qu'un joueur tombe sur le 'Roi des mélanges', il rajoute un ingrédient dans le calice. Quand le 'Roi des mélanges' arrive la 5ème fois, celui qui tombe dessus boit la mixture du calice.",
-      "number": 5
+      "text": "A chaque fois qu'un joueur tombe sur le 'Roi des mélanges', il rajoute un ingrédient dans le calice. Quand le 'Roi des mélanges' arrive la 4ème fois, celui qui tombe dessus boit la mixture du calice.",
+      "number": 4
     },
     {
       "id": 2,
@@ -485,13 +485,6 @@
       "title": "AKTION",
       "text": "Fais une action de ton choix (un geste, une pompe, ...). Le dernier joueur à t'imiter boit 2 Glouglous.",
       "number": 1
-    },
-    {
-      "id": 666,
-      "title": "SANCTION",
-      "text": "Jordan doit se faire enculer par le joueur choisi par le dé : le premier joueur à ta droite  est représenté par le 1, le suivant par le 2, etc...  Sinon : cul-sec",
-      "number": 1
     }
-
   ]
 }

@@ -18,9 +18,13 @@ class PlayerSelectionScreen extends StatefulWidget {
 
 /// This is the private State class that goes with MyStatefulWidget.
 class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
+
+  late PlayerRowList playerRow;
+
   @override
   void initState() {
     super.initState();
+    playerRow = PlayerRowList();
   }
 
   @override
@@ -48,7 +52,7 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      PlayerRowList(),
+                      playerRow,
                     ],
                   ),
                 ),
@@ -79,12 +83,17 @@ class _PlayerSelectionScreen extends State<PlayerSelectionScreen> {
   }
 
   void nextPage() {
-    int nPlayer =
-        Provider.of<PlayerList>(context, listen: false).playerList.length;
-    //Si la liste des joueurs n'est pas vide (au moins deux joueur valide)
-    if (nPlayer > 1) {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => GameScreen()));
+    //S'il y a au moins deux joueurs
+    if (playerRow.controllersList.length > 1) {
+      CardList cardList = Provider.of<CardList>(context, listen: false);
+      PlayerList playerList = Provider.of<PlayerList>(context, listen: false);
+      playerList.fillList(playerRow.controllersList);
+
+      cardList.loadCardList(playerList.getSize()).then((_) {
+        Navigator.push(
+          context, MaterialPageRoute(builder: (context) => GameScreen()),
+        );
+      });
     }
   }
 }

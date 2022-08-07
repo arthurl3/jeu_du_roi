@@ -55,27 +55,6 @@ class AppTheme {
           height: 1.5,
         ),
       ),
-      buttonTheme: ButtonThemeData(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          side: BorderSide(color: AppColors.primary),
-        ),
-        buttonColor: AppColors.primary,
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(
-            AppColors.primary,
-          ),
-          foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8.0),
-              side: BorderSide(color: AppColors.primary),
-            ),
-          ),
-        ),
-      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Color.fromRGBO(240, 240, 240, 1.0),
@@ -94,6 +73,7 @@ class AppTheme {
         ),
         focusColor: AppColors.bodyFontColor,
       ),
+
     );
   }
 }
