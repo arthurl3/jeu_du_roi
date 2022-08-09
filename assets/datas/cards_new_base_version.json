@@ -2,116 +2,116 @@
   "cards": [
     {
       "id": 1,
-      "title": "LE ROI DES MELANGES",
+      "title": "LE ROI DES MÉLANGES",
       "text": "A chaque fois qu'un joueur tombe sur le 'Roi des mélanges', il rajoute un ingrédient dans le calice. Quand le 'Roi des mélanges' arrive la 4ème fois, celui qui tombe dessus boit la mixture du calice.",
       "number": 4
     },
     {
       "id": 2,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Bois 2 Glouglous",
+      "text": "Bois 2 Glouglous.",
       "number": 1
     },
     {
       "id": 3,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Bois 3 Glouglous",
+      "text": "Bois 3 Glouglous.",
       "number": 1
     },
     {
       "id": 4,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Bois 4 Glouglous",
+      "text": "Bois 4 Glouglous.",
       "number": 1
     },
     {
       "id": 5,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Bois 5 Glouglous",
+      "text": "Bois 5 Glouglous.",
       "number": 1
     },
     {
       "id": 6,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tout le monde boit 2 Glouglous",
+      "text": "Tout le monde boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 7,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tout le monde boit 3 Glouglous",
+      "text": "Tout le monde boit 3 Glouglous.",
       "number": 1
     },
     {
       "id": 8,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tout le monde boit 4 Glouglous",
+      "text": "Tout le monde boit 4 Glouglous.",
       "number": 1
     },
     {
       "id": 9,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tout le monde boit 5 Glouglous",
+      "text": "Tout le monde boit 5 Glouglous.",
       "number": 1
     },
     {
       "id": 10,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Désigne un joueur qui boira 2 Glouglous",
+      "text": "Désigne un joueur qui boira 2 Glouglous.",
       "number": 1
     },
     {
       "id": 11,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Désigne un joueur qui boira 3 Glouglous",
+      "text": "Désigne un joueur qui boira 3 Glouglous.",
       "number": 1
     },
     {
       "id": 12,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Désigne un joueur qui boira 4 Glouglous",
+      "text": "Désigne un joueur qui boira 4 Glouglous.",
       "number": 1
     },
     {
       "id": 13,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Désigne un joueur qui boira 5 Glouglous",
+      "text": "Désigne un joueur qui boira 5 Glouglous.",
       "number": 1
     },
     {
       "id": 14,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tous les joueurs sauf toi boivent 2 Glouglous",
+      "text": "Tous les joueurs sauf toi boivent 2 Glouglous.",
       "number": 1
     },
     {
       "id": 15,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tous les joueurs sauf toi boivent 3 Glouglous",
+      "text": "Tous les joueurs sauf toi boivent 3 Glouglous.",
       "number": 1
     },
     {
       "id": 16,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tous les joueurs sauf toi boivent 4 Glouglous",
+      "text": "Tous les joueurs sauf toi boivent 4 Glouglous.",
       "number": 1
     },
     {
       "id": 17,
       "title": "LA ROUTE D'LASOUAF",
-      "text": "Tous les joueurs sauf toi boivent 5 Glouglous",
+      "text": "Tous les joueurs sauf toi boivent 5 Glouglous.",
       "number": 1
     },
     {
       "id": 18,
       "title": "MORT AUX VOISINS",
-      "text": "Lance un dé. Ton voisin de gauche et ton voisin de droite boivent chacun un nombre de Glouglous égal au score du dé",
+      "text": "Lance un dé. Ton voisin de gauche et ton voisin de droite boivent chacun un nombre de Glouglous égal au score du dé.",
       "number": 4
     },
     {
       "id": 19,
       "title": "LE 6 COUPS",
-      "text": "Tu es le shérif. N'importe quand dans la partie, tu as 6 balles à tirer sur les joueurs de ton choix. 1 balle = 1 Glouglou",
+      "text": "Tu es le shérif. N'importe quand dans la partie, tu as 6 balles à tirer sur les joueurs de ton choix. 1 balle = 1 Glouglou.",
       "number": 4
     },
     {
@@ -123,13 +123,13 @@
     {
       "id": 21,
       "title": "SHOT !",
-      "text": "Fais un Glouglou en shot avec le breuvage pur de ton choix",
+      "text": "Fais un Glouglou en shot avec le breuvage pur de ton choix.",
       "number": 1
     },
     {
       "id": 22,
       "title": "SHOT !",
-      "text": "Désigne quelqu'un qui fera Glouglou en shot avec le breuvage pur de ton choix",
+      "text": "Désigne quelqu'un qui fera Glouglou en shot avec le breuvage pur de ton choix.",
       "number": 1
     },
     {
@@ -141,13 +141,13 @@
     {
       "id": 24,
       "title": "MISE À MORT",
-      "text": "Jusqu'à 3 fois, tu peux décider de mettre ton pouce vers le bas n'importe quand. Tous les joueurs doivent alors faire pareil. Le moins rapide fait 2 Glouglous",
+      "text": "Jusqu'à 3 fois, tu peux décider de mettre ton pouce vers le bas n'importe quand. Tous les joueurs doivent alors faire pareil. Le moins rapide fait 2 Glouglous.",
       "number": 4
     },
     {
       "id": 25,
       "title": "OBJET PRENANT",
-      "text": "Jusqu'à la fin du jeu, tu dois essayer de passer un objet à un autre joueur. Si tu y arrives, ce joueur fait 3 Gouglous. Si à la fin du jeu tu n'as pas réussi, tu fais 5 Glouglous",
+      "text": "Jusqu'à la fin du jeu, tu dois essayer de passer un objet à un autre joueur. Si tu y arrives, ce joueur fait 3 Gouglous. Si à la fin du jeu tu n'as pas réussi, tu fais 5 Glouglous.",
       "number": 4
     },
     {
@@ -242,7 +242,7 @@
     },
     {
       "id": 41,
-      "title": "JUSQU'A CE QUE LA BOISSON NOUS SEPARE",
+      "title": "JUSQU'A CE QUE LA BOISSON NOUS SÉPARE",
       "text": "Choisis un joueur, jusqu'à ton prochain tour, à chaque fois  que tu fais des Glouglous, ce joueur en fait le double.",
       "number": 1
     },
@@ -314,7 +314,7 @@
     },
     {
       "id": 53,
-      "title": "LE REGLEMENT",
+      "title": "LE RÈGLEMENT",
       "text": "Tu peux créer une règle que tout le monde doit respecter pendant 2 tours. Celui qui ne la respecte pas boit 2 Glouglous.",
       "number": 1
     },
@@ -339,12 +339,12 @@
     {
       "id": 57,
       "title": "QUESTION",
-      "text": "Pose une question de science à %replace%. S'il ne trouve pas, il boit 2 Glouglous.",
+      "text": "Pose une question de science à %replace% . S'il ne trouve pas, il boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 58,
-      "title": "EQUILIBRE",
+      "title": "ÉQUILIBRE",
       "text": "Tous les joueurs se mettent sur une jambe. Celui ou celle qui tombe en premier boit 2 Glouglous.",
       "number": 1
     },
@@ -363,7 +363,7 @@
     {
       "id": 61,
       "title": "QUESTION",
-      "text": "Pose une question de culture générale à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question de culture générale à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
      {
@@ -380,7 +380,7 @@
     },
     {
       "id": 64,
-      "title": "DEFI",
+      "title": "DÉFI",
       "text": "Es-tu prêt à encaisser une baffe par chaque joueur présent? Pour chaque baffe, tu distribues 3 Glouglous à ce joueur. Au premier refus, glouglou ultime pour celui/celle qui refuse de te mettre ",
       "number": 1
     },
@@ -399,49 +399,43 @@
     {
       "id": 67,
       "title": "QUESTION",
-      "text": "Pose une question de musique à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question de musique à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 68,
       "title": "QUESTION",
-      "text": "Pose une question de géographie à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question de géographie à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 69,
       "title": "QUESTION",
-      "text": "Pose une question sur l'art à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question sur l'art à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 70,
       "title": "QUESTION",
-      "text": "Pose une question sur le monde animal à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question sur le monde animal à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 71,
       "title": "QUESTION",
-      "text": "Pose une question sur la faune et la flore à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question sur la faune et la flore à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 72,
       "title": "QUESTION",
-      "text": "Pose une question de technologie à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
+      "text": "Pose une question de technologie à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
       "id": 73,
       "title": "QUESTION",
-      "text": "Pose une question sur le corps humain à %replace%. S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
-      "number": 1
-    },
-    {
-      "id": 74,
-      "title": "L'IMMACULÉE CONCEPTION",
-      "text": "Explique comment tu penses que tes parents t'ont conçu ou boit 5 Glouglous.",
+      "text": "Pose une question sur le corps humain à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
@@ -451,39 +445,39 @@
       "number": 1
     },
     {
-      "id": 76,
-      "title": "QUESTION",
-      "text": "Quelle est la capitale de l'Australie? 2 Glouglous si tu ne trouves pas.",
-      "number": 1
-    },
-    {
       "id": 77,
-      "title": "QUESTION",
-      "text": "Combien d'habitant en France (arrondie au million)? 2 Glouglous si tu ne trouves pas.",
+      "title": "PRONONCIATION",
+      "text": "Répète rapidement 3 fois la phrase 'Tonton Tati, ton thé a-t-il ôté ta toux?' sans te tromper. Si tu te trompes, bois 3 Glouglous",
       "number": 1
     },
     {
       "id": 78,
-      "title": "PRONONCIATION",
-      "text": "Répète rapidement 3 fois la phrase 'Tonton Tati, ton thé a-t-il ôté ta toux?' sans te tromper. Si tu te trompes, bois 3 Glouglous",
-      "number": 1
-    },
-    {
-      "id": 79,
-      "title": "PRONONCIATION",
-      "text": "Répète rapidement 3 fois la phrase 'Tonton Tati, ton thé a-t-il ôté ta toux?' sans te tromper. Si tu te trompes, bois 3 Glouglous",
-      "number": 1
-    },
-    {
-      "id": 80,
       "title": "TEBAHPLA",
       "text": "Récitez rapidement l'alphabet à l'envers à tour de rôle. Celui qui se trompe boit 3 Glouglous. Tu commences.",
       "number": 1
     },
     {
-      "id": 81,
+      "id": 79,
       "title": "AKTION",
       "text": "Fais une action de ton choix (un geste, une pompe, ...). Le dernier joueur à t'imiter boit 2 Glouglous.",
+      "number": 1
+    },
+    {
+      "id": 80,
+      "title": "SHI FU MI !",
+      "text": "Fais un Shi fu mi avec %replace% . Le perdant boit 2 Glouglous.",
+      "number": 1
+    },
+    {
+      "id": 81,
+      "title": "CONFIANCE",
+      "text": "%replace% écrit un message sur ton téléphone à une personne de son choix. Tu as le choix entre appuyer sur 'Envoyer' ou faire le Glouglou ultime",
+      "number": 1
+    },
+    {
+      "id": 82,
+      "title": "SPHINX",
+      "text": "Fais deviner quelque chose à %replace% . S'il/elle ne trouve pas, elle boit 2 Glouglous.",
       "number": 1
     }
   ]

@@ -4,15 +4,16 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:jeu_du_roi/src/models/GameCard.dart';
+import 'package:jeu_du_roi/src/models/Mode.dart';
 import 'package:jeu_du_roi/src/constants/constants.dart' as Constants;
 import 'package:jeu_du_roi/src/constants/constant_cards.dart' as ConstantCards;
 
 class CardList extends ChangeNotifier {
   List<GameCard> cardList = [];
-  String cardsFilepath = Constants.STRING_BASEMODEFILEPATH;
   int kingsGameCounter = 0;
   late int numberOfKingGameCard;
   late int nbCards;
+  int currentCardIndex = -1;
 
   void addCard(GameCard p) {
     this.cardList.add(p);
@@ -26,12 +27,11 @@ class CardList extends ChangeNotifier {
 
   //Get the next card of the current game
   GameCard getNextCard() {
-    if (this.cardList.length > 0) {
-      GameCard gc = this.cardList.last;
-      this.cardList.removeLast();
-      if (gc.cardId == 1) {
+    currentCardIndex++;
+    if (this.currentCardIndex < this.cardList.length) {
+      GameCard gc = this.cardList[currentCardIndex];
+      if (gc.cardId == 1)
         this.kingsGameCounter++;
-      }
       if (this.kingsGameCounter == this.numberOfKingGameCard) {
         this.kingsGameCounter = 0;
         return ConstantCards.CARD_ROI_DES_MELANGES;
@@ -39,6 +39,18 @@ class CardList extends ChangeNotifier {
       return gc;
     }
     return ConstantCards.END_GAME;
+  }
+
+  GameCard? previousCard() {
+
+    if(currentCardIndex > 0) {
+      if(this.cardList[currentCardIndex].cardId == 1)
+        this.kingsGameCounter--;
+      currentCardIndex--;
+      GameCard gc = this.cardList[currentCardIndex];
+      return gc;
+    }
+    return null;
   }
 
   // Fisher–Yates shuffle
@@ -65,9 +77,9 @@ class CardList extends ChangeNotifier {
     }
   }
 
-  Future<dynamic> loadCardList(int nPlayer) async {
+  Future<dynamic> loadCardList(int nPlayer, Mode mode) async {
     Map<dynamic, dynamic> jsonData;
-    String jsonContent = await rootBundle.loadString(this.cardsFilepath);
+    String jsonContent = await rootBundle.loadString(mode.path);
     jsonData = json.decode(jsonContent);
     List<dynamic> cards = jsonData['cards'];
     for (dynamic data in cards) {
@@ -82,8 +94,11 @@ class CardList extends ChangeNotifier {
     }
     shuffle();
     //printDeck(); // For Debugging
-    _setNumberOfCards(nPlayer); //Set the number of cards in function of player's number
-    _removeExtraCards();
+    if(mode.name == 'Soft') {
+      _setNumberOfCards(nPlayer); //Set the number of cards in function of player's number
+      _removeExtraCards();
+    }
+
     notifyListeners();
   }
 
@@ -135,8 +150,8 @@ class CardList extends ChangeNotifier {
 
 void empty() {
     this.cardList = [];
-    String cardsFilepath = Constants.STRING_BASEMODEFILEPATH;
-    int kingsGameCounter = 0;
+    currentCardIndex = -1;
+    kingsGameCounter = 0;
 }
 
   // For Debugging purpose

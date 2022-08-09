@@ -32,7 +32,7 @@ class AppTheme {
         headline4: TextStyle(
           fontFamily: GoogleFonts.indieFlower().fontFamily,
           color: AppColors.basicFontColor,
-          fontSize: 40,
+          fontSize: 36,
           fontWeight: FontWeight.bold,
           height: 1.2,
           letterSpacing: 3,
@@ -40,7 +40,14 @@ class AppTheme {
         headline5: TextStyle(
           fontFamily: GoogleFonts.alef().fontFamily,
           color: AppColors.basicFontColor,
-          fontSize: 32,
+          fontSize: 26,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 3,
+        ),
+        headline6: TextStyle(
+          fontFamily: GoogleFonts.alef().fontFamily,
+          color: AppColors.basicFontColor,
+          fontSize: 16,
           fontWeight: FontWeight.bold,
           letterSpacing: 3,
         ),
@@ -49,10 +56,10 @@ class AppTheme {
           fontSize: 8,
         ),
         bodyText1: TextStyle(
-          fontFamily: GoogleFonts.notoSerif().fontFamily,
+          fontFamily: GoogleFonts.lato().fontFamily,
           color: AppColors.basicFontColor,
-          fontSize: 24,
-          height: 1.5,
+          fontSize: 21,
+          height: 1.4,
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(

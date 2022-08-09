@@ -1,8 +1,8 @@
 import 'dart:math';
-
+import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 import 'package:jeu_du_roi/src/models/Player.dart';
-import 'dart:developer' as developer;
+
 
 class PlayerList extends ChangeNotifier {
   List<Player> _playerList = [];
@@ -32,6 +32,8 @@ class PlayerList extends ChangeNotifier {
     }
   }
 
+  List<Player> getPlayerList() => this._playerList;
+
   Player getNextPlayer() {
     if(this.currentPlayerIndex == -1)
       currentPlayerIndex = Random().nextInt(_size);
@@ -40,10 +42,9 @@ class PlayerList extends ChangeNotifier {
     else
       currentPlayerIndex++;
     return this._playerList[currentPlayerIndex];
-
   }
 
-  int getPreviousPlayer() {
+  Player getPreviousPlayer() {
     if(currentPlayerIndex == 0)
       previousPlayerIndex = _size - 1;
     else
@@ -51,7 +52,7 @@ class PlayerList extends ChangeNotifier {
     return this._playerList[previousPlayerIndex];
   }
 
-  int getNextPlayer() {
+  Player getNextToPlayPlayer() {
     if(currentPlayerIndex == _size - 1)
       nextPlayerIndex = 0;
     else
@@ -59,11 +60,24 @@ class PlayerList extends ChangeNotifier {
     return this._playerList[nextPlayerIndex];
   }
 
+  // Return to the previous player
+  Player previousPlayer() {
+    if(currentPlayerIndex == 0)
+      previousPlayerIndex = _size - 1;
+    else
+      previousPlayerIndex = currentPlayerIndex - 1;
+    currentPlayerIndex = previousPlayerIndex;
+    return this._playerList[currentPlayerIndex];
+  }
 
   void empty() {
     this._playerList = [];
-    currentPlayer = -1;
+    currentPlayerIndex = -1;
     _size = 0;
+  }
+
+  void reset() {
+    currentPlayerIndex = -1;
   }
 
   void printList() {
