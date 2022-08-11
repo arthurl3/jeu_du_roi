@@ -106,19 +106,19 @@
       "id": 18,
       "title": "MORT AUX VOISINS",
       "text": "Lance un dé. Ton voisin de gauche et ton voisin de droite boivent chacun un nombre de Glouglous égal au score du dé.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 19,
       "title": "LE 6 COUPS",
       "text": "Tu es le shérif. N'importe quand dans la partie, tu as 6 balles à tirer sur les joueurs de ton choix. 1 balle = 1 Glouglou.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 20,
       "title": "DANS LA MALLE DE MA GRAND-MÈRE...",
       "text": " A tour de rôle, reprenez la phrase 'Dans la malle de ma grand-mère, il y a ...' en rajoutant à chaque fois un mot ou un groupe de mot. Le premier à se tromper fait 3 Glouglous. Tu commences.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 21,
@@ -136,42 +136,42 @@
       "id": 23,
       "title": "LES THÈMES",
       "text": "Lance un thème. A tour de rôle en commencant par toi chacun va donner une proposition qui répond à ce thème. Le joueur qui ne trouve plus ou qui se trompe fait 2 Glouglous. Exemple : Les marques de voitures, les positions au lit...",
-      "number": 4
+      "number": 3
     },
     {
       "id": 24,
       "title": "MISE À MORT",
       "text": "Jusqu'à 3 fois, tu peux décider de mettre ton pouce vers le bas n'importe quand. Tous les joueurs doivent alors faire pareil. Le moins rapide fait 2 Glouglous.",
-      "number": 4
+      "number": 3
     },
     {
       "id": 25,
       "title": "OBJET PRENANT",
       "text": "Jusqu'à la fin du jeu, tu dois essayer de passer un objet à un autre joueur. Si tu y arrives, ce joueur fait 3 Gouglous. Si à la fin du jeu tu n'as pas réussi, tu fais 5 Glouglous.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 26,
       "title": "GLOUGLOU ULTIME",
-      "text": "Tous les joueurs sauf toi font un Glouglou ultime",
+      "text": "Tous les joueurs sauf toi font un Glouglou ultime.",
       "number": 1
     },
     {
       "id": 27,
       "title": "GLOUGLOU ULTIME",
-      "text": "Fais un Glouglou ultime",
+      "text": "Fais un Glouglou ultime.",
       "number": 1
     },
     {
       "id": 28,
       "title": "GLOUGLOU ULTIME",
-      "text": "Désigne quelqu'un qui fera un Glouglou ultime",
+      "text": "Désigne quelqu'un qui fera un Glouglou ultime.",
       "number": 1
     },
     {
       "id": 29,
       "title": "6 OU RIEN",
-      "text": "Chaque joueur lance un dé. Tous les joueurs qui font 6 font le Glouglou ultime",
+      "text": "Chaque joueur lance un dé. Tous les joueurs qui font 6 font le Glouglou ultime.",
       "number": 1
     },
     {
@@ -184,24 +184,24 @@
       "id": 31,
       "title": "GAGE",
       "text": "Attribue un gage au joueur de ton choix",
-      "number": 15
+      "number": 2
     },
     {
       "id": 32,
       "title": "LA PAUSE DU GUERRIER",
       "text": "Ton prochain verre sera de l'eau. Tant que le contenu est de l'eau, tes Glouglous sont doublés. Une fois le verre terminé, tu repars à ta boisson préférée.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 33,
       "title": "ARMURE",
       "text": "La prochaine fois que tu dois boire, tu diminues de moitié la quantité.",
-      "number": 2
+      "number": 1
     },
     {
       "id": 34,
       "title": "QUITTE OU DOUBLE",
-      "text": "Parie 1 à 3 Glouglous et lance un dé. Si tu fais un score pair, tu bois ce qui tu a parié. Si tu fais un score impair, les autres joueurs boivent le double.",
+      "text": "Parie 1 à 3 Glouglous et lance un dé. Si tu fais un score pair, tu bois ce que tu a parié. Si tu fais un score impair, les autres joueurs boivent le double.",
       "number": 2
     },
     {
@@ -214,7 +214,7 @@
       "id": 36,
       "title": "LE 1 QUI PREND",
       "text": "Lance le dé. Si tu fais 1, tu fais le Glouglou ultime. Sinon, les autres joueurs boivent un nombre de Glouglous égal au score du dé.",
-      "number": 4
+      "number": 2
     },
     {
       "id": 37,
@@ -256,228 +256,198 @@
       "id": 43,
       "title": "MIROIR",
       "text": "La prochaine fois que tu dois faire un Glouglou, tu peux le renvoyer à n'importe quelle personne de ton choix.",
-      "number": 2
+      "number": 1
     },
     {
       "id": 44,
       "title": "GAGE INVERSÉ",
       "text": "Tous les joueurs se concertent pour te donner un gage.",
-      "number": 15
+      "number": 2
     },
     {
       "id": 45,
-      "title": "ÉCHANGE",
-      "text": "Verse une partie du contenu du verre de %replace% dans ton verre.",
-      "number": 1
-    },
-    {
-      "id": 46,
       "title": "AMBIANCE",
       "text": "Mets une musique. Tous les joueurs qui trouvent le titre te distribuent 1 Glouglou.",
       "number": 1
     },
     {
-      "id": 47,
+      "id": 46,
       "title": "ZYEUX",
       "text": "Choisis quel joueur a les plus beaux yeux. Il boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 48,
+      "id": 47,
       "title": "LE MAILLON FAIBLE",
       "text": "Rempli le verre de la personne qui a le moins de liquide. Si c'est toi, tu bois le Glouglou ultime.",
       "number": 1
     },
     {
-      "id": 49,
+      "id": 48,
       "title": "CINÉMACINÉMA",
       "text": "Donne une citation d'un film. %replace% doit deviner de quel film il s'agit. S'il ne trouve pas, il ou elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 50,
+      "id": 49,
       "title": "MOT DE SILENCE",
       "text": "Donne un mot de ton choix. Pendant 2 tours, à chaque fois qu'une personne prononce ce mot, elle boit 3 Glouglous.",
       "number": 1
     },
     {
-      "id": 51,
-      "title": "TATOO",
-      "text": "Fais autant de Glouglou que tu as de tatouage.",
-      "number": 1
-    },
-    {
-      "id": 52,
+      "id": 50,
       "title": "STAR",
       "text": "Si tu as déjà fait une vidéo Youtube bois 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 53,
+      "id": 51,
       "title": "LE RÈGLEMENT",
       "text": "Tu peux créer une règle que tout le monde doit respecter pendant 2 tours. Celui qui ne la respecte pas boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 54,
-      "title": "STAR 2",
-      "text": "La personne avec le plus de followers boit 2 Glouglous.",
-      "number": 1
-    },
-    {
-      "id": 55,
+      "id": 53,
       "title": "HISTORIQUE",
       "text": "Révèle ton historique internet ou boit 5 Glouglous.",
       "number": 1
     },
     {
-      "id": 56,
+      "id": 54,
       "title": "DATE",
       "text": "Donne la date de naissance de %replace% ou boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 57,
+      "id": 55,
       "title": "QUESTION",
       "text": "Pose une question de science à %replace% . S'il ne trouve pas, il boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 58,
+      "id": 56,
       "title": "ÉQUILIBRE",
       "text": "Tous les joueurs se mettent sur une jambe. Celui ou celle qui tombe en premier boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 59,
+      "id": 57,
       "title": "JOKE",
       "text": "Fais une blague. Bois 2 Glouglous si personne ne rigole.",
       "number": 1
     },
     {
-      "id": 60,
-      "title": "SWAPPING",
-      "text": "Change de place avec le joueur le plus loin de toi.",
-      "number": 1
-    },
-    {
-      "id": 61,
+      "id": 58,
       "title": "QUESTION",
       "text": "Pose une question de culture générale à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
      {
-      "id": 62,
+      "id": 59,
       "title": "QUE DU SALE",
-      "text": "Tu dois sucer le gros orteil de %replace%. Si tu refuses, tu prends 5 Glouglous. S'il/elle refuse il/elle prend tes Glouglous",
+      "text": "Tu dois sucer le gros orteil de %replace%. Si tu refuses, tu prends 4 Glouglous. S'il/elle refuse il/elle prend tes Glouglous",
       "number": 1
       },
      {
-      "id": 63,
+      "id": 60,
       "title": "SANCTION",
       "text": "Prends 1 Glouglou par personne qui joue au Napusoif en leur disant droit dans les yeux que tu es une vilaine truie",
       "number": 1
     },
     {
-      "id": 64,
-      "title": "DÉFI",
-      "text": "Es-tu prêt à encaisser une baffe par chaque joueur présent? Pour chaque baffe, tu distribues 3 Glouglous à ce joueur. Au premier refus, glouglou ultime pour celui/celle qui refuse de te mettre ",
-      "number": 1
-    },
-    {
-      "id": 65,
+      "id": 62,
       "title": "JE N'AI JAMAIS",
-      "text": "Donne une action que tu as faite en commençant par 'je n'ai jamais ...'. Ceux qui n'ont pas fait ou si tu te trompes : 3 Glouglous",
+      "text": "Donne une action que tu as faite en commençant par 'je n'ai jamais ...'. Ceux qui ont fait : 3 Glouglous",
       "number": 1
     },
     {
-      "id": 66,
+      "id": 63,
       "title": "GRUIK GRUIK !!!",
       "text": "Tourne autour de la table en imitant une truie appeuré pendant 20 secondes ou boit 5 Glouglous.",
       "number": 1
     },
     {
-      "id": 67,
+      "id": 64,
       "title": "QUESTION",
       "text": "Pose une question de musique à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 68,
+      "id": 65,
       "title": "QUESTION",
       "text": "Pose une question de géographie à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 69,
+      "id": 66,
       "title": "QUESTION",
       "text": "Pose une question sur l'art à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 70,
+      "id": 67,
       "title": "QUESTION",
       "text": "Pose une question sur le monde animal à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 71,
+      "id": 68,
       "title": "QUESTION",
       "text": "Pose une question sur la faune et la flore à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 72,
+      "id": 69,
       "title": "QUESTION",
       "text": "Pose une question de technologie à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 73,
-      "title": "QUESTION",
-      "text": "Pose une question sur le corps humain à %replace% . S'il/elle ne trouve pas la réponse, il/elle boit 2 Glouglous.",
-      "number": 1
-    },
-    {
-      "id": 75,
+      "id": 71,
       "title": "IMITATION",
-      "text": "Imite un joueur. Celui qui trouve qui c'est distribue 2 Glouglous.",
+      "text": "Imite un joueur présent. Celui qui trouve qui c'est distribue 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 77,
+      "id": 72,
       "title": "PRONONCIATION",
-      "text": "Répète rapidement 3 fois la phrase 'Tonton Tati, ton thé a-t-il ôté ta toux?' sans te tromper. Si tu te trompes, bois 3 Glouglous",
+      "text": "Répète rapidement 3 fois la phrase : 'Si sa saucisse sent, ses six cent six saucisses sentent aussi.' sans te tromper. Si tu te trompes, bois 3 Glouglous",
       "number": 1
     },
     {
-      "id": 78,
+      "id": 73,
       "title": "TEBAHPLA",
       "text": "Récitez rapidement l'alphabet à l'envers à tour de rôle. Celui qui se trompe boit 3 Glouglous. Tu commences.",
       "number": 1
     },
     {
-      "id": 79,
+      "id": 74,
       "title": "AKTION",
       "text": "Fais une action de ton choix (un geste, une pompe, ...). Le dernier joueur à t'imiter boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 80,
+      "id": 75,
       "title": "SHI FU MI !",
       "text": "Fais un Shi fu mi avec %replace% . Le perdant boit 2 Glouglous.",
       "number": 1
     },
     {
-      "id": 81,
+      "id": 76,
       "title": "CONFIANCE",
       "text": "%replace% écrit un message sur ton téléphone à une personne de son choix. Tu as le choix entre appuyer sur 'Envoyer' ou faire le Glouglou ultime",
       "number": 1
     },
     {
-      "id": 82,
+      "id": 77,
       "title": "SPHINX",
-      "text": "Fais deviner quelque chose à %replace% . S'il/elle ne trouve pas, elle boit 2 Glouglous.",
+      "text": "Fais deviner quelque chose à %replace% . S'il/elle ne trouve pas, il/elle boit 2 Glouglous.",
+      "number": 1
+    },
+    {
+      "id": 78,
+      "title": "PRONONCIATION",
+      "text": "Répète rapidement 3 fois la phrase : 'La pipe au papa du pape Pie pue.' sans te tromper. Si tu te trompes, bois 3 Glouglous",
       "number": 1
     }
   ]

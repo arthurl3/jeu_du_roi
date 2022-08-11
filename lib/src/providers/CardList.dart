@@ -125,19 +125,19 @@ class CardList extends ChangeNotifier {
         this.nbCards = 70;
         break;
       case 8:
-        this.nbCards = 75;
+        this.nbCards = 80;
         break;
       case 9:
-        this.nbCards = 75;
+        this.nbCards = 90;
         break;
       case 10:
-        this.nbCards = 75;
+        this.nbCards = 100;
         break;
       case 11:
-        this.nbCards = 75;
+        this.nbCards = 110;
         break;
       case 12:
-        this.nbCards = 75;
+        this.nbCards = 120;
         break;
     }
   }

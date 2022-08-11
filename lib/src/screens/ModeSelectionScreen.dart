@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jeu_du_roi/src/components/core/CustomTitle.dart';
 import 'package:jeu_du_roi/src/config/SizeConfig.dart';
 import 'package:jeu_du_roi/src/models/Mode.dart';
@@ -51,9 +52,29 @@ class _ModeSelectionScreen extends State<ModeSelectionScreen> {
             itemCount: modeList.length,
             itemBuilder: (context, index) {
               return GestureDetector(
-                child: ListTile(
-                  title:Text( modeList[index].name),
-                  subtitle: Text(modeList[index].description),
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: ListTile(
+                    title:Text(modeList[index].name,
+                      style:TextStyle(
+                        fontFamily: GoogleFonts.lato().fontFamily,
+                        color: Colors.white,
+                        fontSize: 21,
+                        height: 1.4,
+                      ),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.black, width: 1),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    subtitle: Text(modeList[index].description,
+                      style:TextStyle(
+                        fontFamily: GoogleFonts.lato().fontFamily,
+                        color: Colors.white,
+                        fontSize: 16,
+                        height: 1.4,
+                      ),),
+                  ),
                 ),
                 onTap: (){
                   gotoGame(modeList[index]);
