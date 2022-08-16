@@ -1,17 +1,22 @@
 # Jeu du roi
 
-Exemple de jeu basique en Flutter.
+Card game written in Flutter.
 
-Le jeu a besoin d'un fichier au format JSON à fournir.
+Features : 
+- Select players
+- Select a mode
+- Card are randomly attributed to players alternatively
 
-- Le fichier doit se situer dans "/assets/datas" et doit s'appeler "cards.json"
--Le format doit être comme tel  :
+This version need at least one JSON file containing the cards datas to work.
+
+-This file has to be in "/assets/datas"
+-The format should be like the example below :
 <br/>
 { "cards": <br/> [ <br/>
   {
   "id": 1,
   "title": "CARD TITLE",
-  "text": "What the card's text",
+  "text": "The first card's text",
   "number": 1
   },<br/>
   {
